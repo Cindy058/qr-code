@@ -1,77 +1,140 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
- <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
-  
-  <title>Frontend Mentor | QR code component</title>
-
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Lumi Farms — From Seed to Table</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Montserrat:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="#" class="logo">Lumi <span>Farms</span></a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="primary-nav">Menu</button>
+      <nav id="primary-nav" class="primary-nav" aria-label="Primary">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#process">Process</a></li>
+          <li><a href="#products">Products</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-  <style>body{
-    font-family: Outfit;
-    background-color: hsl(212, 45%, 89%);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+  <main>
+    <section class="hero">
+      <div class="container hero-inner">
+        <div class="hero-text">
+          <h1 class="brand"><span class="light">Lumi</span> <span class="accent">Farms</span></h1>
+          <p class="lead">Sowing care. Growing with nature. Delivering freshness from field to family.</p>
+          <p class="cta-row">
+            <a class="btn primary" href="#process">Explore our process</a>
+            <a class="btn ghost" href="#contact">Get in touch</a>
+          </p>
+        </div>
+        <div class="hero-art">
+          <img src="images/field.jpg" alt="Sunlit farm fields"/>
+        </div>
+      </div>
+    </section>
 
-.text{
-  background-color: white;
-    border: 1px solid white;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 80vh;
-    width: 35vw;
-    padding: 10px 4px;
-    margin-top: 20px;
-    border-radius: 20px;
-}
-.img{
-  
-    border-radius: 12px;
-   margin-left: 15px ;
-   margin-right: 15px ;
-    height: 55vh;
-    width:33vw;
-}
-.p1{
-  font-weight: 700;
-  font-size: larger;
-  font-weight: bold;
-  color: hsl(218, 44%, 22%);
-}
-.p2{
-  font-weight: 400;
-  font-size: small;
-  font-weight: bold;
-  color: hsl(216, 15%, 48%);
-}
+    <section id="about" class="about container">
+      <h2>About Lumi Farms</h2>
+      <p>At Lumi Farms we combine traditional farming knowledge with thoughtful, sustainable practices to grow healthy produce. Our mission is to nourish communities with traceable, responsibly-grown food.</p>
+    </section>
 
+    <section id="process" class="process container">
+      <h2>Our Production Process</h2>
+      <p class="intro">Every product travels a clear path — we pay attention at every step to ensure quality and sustainability.</p>
+      <div class="process-grid">
+        <article class="process-card">
+          <div class="icon">🌱</div>
+          <h3>Sowing</h3>
+          <p>We begin with carefully selected seeds and soil preparation aimed at maximizing germination and soil health.</p>
+        </article>
 
+        <article class="process-card">
+          <div class="icon">☀️</div>
+          <h3>Growing</h3>
+          <p>Plants are tended with natural fertilizers and water-conscious irrigation. We monitor growth for pest prevention using integrated pest management.</p>
+        </article>
 
-</style>
-<center><div class="text">
-  <img class="img" src="images/image-qr-code.png" alt="QR-code">
-  <p class="p1">Improve your front-end <br> skills by building projects</p>
+        <article class="process-card">
+          <div class="icon">🚜</div>
+          <h3>Harvesting</h3>
+          <p>Harvesting is timed for peak freshness. Our teams hand-pick or mechanically harvest depending on the crop to reduce waste.</p>
+        </article>
 
- <p class="p2">Scan the QR code to visit Frontend <br> Mentor and take your coding skills to <br>the next level</p> 
-  </div>
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="https://x.com/cin_dyy05?s=21">Cindy Ahosey</a>.
-  </div></center>
+        <article class="process-card">
+          <div class="icon">📦</div>
+          <h3>Packaging</h3>
+          <p>We package using recycled or compostable materials where possible, applying gentle handling and quality checks.</p>
+        </article>
 
+        <article class="process-card">
+          <div class="icon">🚚</div>
+          <h3>Transportation</h3>
+          <p>Products are moved via cold-chain logistics for perishables or efficient transport routes to minimize carbon footprint and time to market.</p>
+        </article>
+
+        <article class="process-card">
+          <div class="icon">🏠</div>
+          <h3>Delivery</h3>
+          <p>From our farm to your table — local deliveries, partner grocers, and wholesale channels bring Lumi produce to your home.</p>
+        </article>
+      </div>
+    </section>
+
+    <section id="products" class="products container">
+      <h2>Featured Products</h2>
+      <div class="products-grid">
+        <div class="product-card">
+          <img src="images/produce1.jpg" alt="Fresh produce">
+          <h4>Seasonal Vegetables</h4>
+          <p>Picked at peak ripeness and delivered fast.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/produce2.jpg" alt="Fresh produce">
+          <h4>Organic Grains</h4>
+          <p>Sustainably grown with regenerative practices.</p>
+        </div>
+        <div class="product-card">
+          <img src="images/produce3.jpg" alt="Fresh produce">
+          <h4>Herbs & Greens</h4>
+          <p>Hand-tended and packed carefully.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="contact container">
+      <h2>Contact</h2>
+      <p>Want Lumi Farms produce in your store or home? Reach out and we'll connect you with our distribution team.</p>
+      <form class="contact-form" action="#">
+        <label>Full name
+          <input type="text" name="name" required>
+        </label>
+        <label>Email
+          <input type="email" name="email" required>
+        </label>
+        <label>Message
+          <textarea name="message" rows="4" required></textarea>
+        </label>
+        <p><button class="btn primary" type="submit">Send message</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; <span id="year"></span> Lumi Farms — All rights reserved.</p>
+      <p class="foot-nav"><a href="#">Privacy</a> · <a href="#">Terms</a></p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
